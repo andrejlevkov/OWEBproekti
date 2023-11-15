@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <script src="cartscript.js"></script>
+    <title>My Profile</title>
+</head>
+<body>
+    <h2>My profile</h2>
+    <h4 id="h4"></h4>
+    <div id="items">
+        <ul id="list"></ul>
+    </div>
+    <form method="post" action=#>
+        <label for="img">Upload profile photo:</label>
+        <input type="file" id="pfp" name="img" accept="image/*">
+        <label for="img">Upload photo:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit" value="Upload" id="upload">
+    </form>
+    <h3>Check out items</h3>
+    <form method="post" action="#">
+        <p>Full Name:</p>
+        <input type ="text" name="fullname">
+        <p>Adress:</p>
+        <input type ="text" name="adress">
+        <p>Email address: </p>
+        <input type="email" name="mail"> <br>
+        <p>Phone number:</p>
+        <input type="number" name="phonenumber">
+        <p>Additional Comments:</p>
+        <textarea placeholder="Add a comment" rows="5" cols="40" style="resize: none;"></textarea><br>
+        <input type="submit" value="Check out">  <br>
+    </form>
+    <h3>My Photos:</h3>
+    <ul id="myphotos"></ul>
+</body>
+</html>
