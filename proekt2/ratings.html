@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Us</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="submitsuccess.html">
+        <p>Full Name:</p>
+        <input type ="text" name="fullname">
+        <p>Email address: </p>
+        <input type="email" name="mail"> <br>
+
+        <p>How was your overall experience with the site: </p>
+        <input type="radio" id="html" name="experience" value="vgood">
+        <label">Very Good</label>
+        <input type="radio" id="css" name="experience" value="good">
+        <label>Good</label>
+        <input type="radio" id="javascript" name="experience" value="JavaScript">
+        <label">OK</label>
+        <input type="radio" id="javascript" name="experience" value="JavaScript">
+        <label">Bad</label>
+        <input type="radio" id="javascript" name="experience" value="JavaScript">
+        <label>Very Bad</label>
+
+        <p>What type of merchandise did you purchase the most: </p>
+        <input type="checkbox" id="merch" name="vinyl" value="vinyl">
+        <label>Vinyl Records</label><br>
+        <input type="checkbox" id="merch" name="cassette" value="cassette">
+        <label>Cassette tapes</label><br>
+        <input type="checkbox" id="merch" name="cd" value="cd">
+        <label>CDs</label>
+
+        <p>Additional Comments:</p>
+        <textarea placeholder="Add a comment" rows="5" cols="40" style="resize: none;"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

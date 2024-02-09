@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#toolbar {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1%;
+}
+li{
+    margin-bottom: 20%;
+    font-size: 15px;
+}
+li img {
+    width: 8%;
+    height: 8%;
+    padding-right: 4%;
+    padding-left: 10%;
+    vertical-align: middle;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+#left{
+    position: fixed;
+}
+.right{
+    position:absolute;
+    top:0;
+    right:0;
+    padding-right: 5%;
+    padding-top: 6%;
+}
+.top{
+    position: absolute;
+    right: 0;
+    padding-right: 5%;
+    z-index: 999;
+}
+#login{
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    border-radius: 4px;
+}

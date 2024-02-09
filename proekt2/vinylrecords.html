@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinyls</title>
+    <!-- Google Fonts Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="vinylcss.css" />
+    <script>
+      var cenajson = sessionStorage.getItem("ceni");
+      var arrceni = JSON.parse(cenajson);
+
+      $(document).ready(function(){
+        for(var i=1; i<13; i++){
+          $("#cena" + i).text("Price: " + arrceni[i-1]);
+        }
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class = "left">
+        <ul id="toolbar">
+            <li><a href = "main.html">
+                <img src = "logos/home-icon.png" alt="homeicon"> Home
+            </a></li>
+            <li><a href = "vinylrecords.html">
+                <img src = "logos/vinyl-icon.png" alt="searchicon">Vinyl Records
+            </a></li>
+            <li><a href = "cassettes.html">
+                <img src = "logos/cassette-icon.png" alt="browseicon">Cassettes
+            </a></li>
+            <li><a href = "cds.html">
+                <img src="logos/cd-icon.png" alt="carticon">CDs
+            </a></li>
+        </a></li>
+        <li><a href = # id="cart">
+          <img src="logos/my-profile.png" alt="carticon">My Profile
+          </a>
+        </li>
+        <li><a href = ratings.html>
+            <img src="logos/clipboard-icon.png" alt="carticon">Rate Us
+        </a></li>
+        </ul>
+    </div>
+    <div class="image-gallery">
+      <div class="image-box">
+        <img src="products_temp/item1.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Beatles 1958-1962</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena1"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item2.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Joy Division Unknown Pleasures</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena2"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item3.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Guns N Roses Greatest Hits</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena3"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item8.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Rammstein Sehnsucht</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena8"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item9.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Leibach Love Is Still Alive</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena9"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item11.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Eric Clapton Slowhand</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena11"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item12.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Pink Floyd Live 1969</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena12"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item5.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Nirvana Nirvana LP</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena5"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item6.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Kiss Kiss LP</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena6"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item4.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Gorillaz Demon Days</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena4"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item10.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Elton John Elton John LP</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena10"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item7.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">ACDC For Those About To Rock</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena7"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

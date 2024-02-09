@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDs</title>
+    <!-- Google Fonts Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="vinylcss.css" />
+    <script>
+      var cenajson = sessionStorage.getItem("ceni");
+      var arrceni = JSON.parse(cenajson);
+
+      $(document).ready(function(){
+          for(var i=25; i<37; i++){
+              $("#cena" + i).text("Price: " + arrceni[i-1]);
+            }
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class = "left">
+        <ul id="toolbar">
+            <li><a href = "main.html">
+                <img src = "logos/home-icon.png" alt="homeicon"> Home
+            </a></li>
+            <li><a href = "vinylrecords.html">
+                <img src = "logos/vinyl-icon.png" alt="searchicon">Vinyl Records
+            </a></li>
+            <li><a href = "cassettes.html">
+                <img src = "logos/cassette-icon.png" alt="browseicon">Cassettes
+            </a></li>
+            <li><a href = "cds.html">
+                <img src="logos/cd-icon.png" alt="carticon">CDs
+            </a></li>
+        </a></li>
+        <li><a href = # id="cart">
+          <img src="logos/my-profile.png" alt="carticon">My Profile
+      </a></li>
+        <li><a href = ratings.html>
+            <img src="logos/clipboard-icon.png" alt="carticon">Rate Us
+        </a></li>
+        </ul>
+    </div>
+    <div class="image-gallery">
+      <div class="image-box">
+        <img src="products_temp/item31.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Blondie Greatest Hits</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena31"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item27.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">The Police Greatest Hits</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena27"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item33.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">The Smiths The Smiths</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena33"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item28.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Deep Purple Live In Newcastle 2001</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena28"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item34.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Bon Jovi These Days</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena34"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item36.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Sex Pistols Never Mind The Bollocks Here's The Sex Pistols</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena36"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item29.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Dead Can Dance Dead Can Dance</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena29"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item35.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Aerosmith Greatest Hits</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena35"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item26.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">The Doors The Doors</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena26"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item30.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">The Ramones The Ramones</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena30"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item25.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">The Rolling Stones Stripped</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena25"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="products_temp/item32.jpg" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Talking Heads The Best Of</a>
+            </h3>
+            <span class="category">
+              <a href="#" id="cena32"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
